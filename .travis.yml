@@ -23,9 +23,9 @@ before_install:
       echo '*** Using OpenJDK 8'
     else
       echo '*** Using OpenJDK 11 by default'
-      sudo DEBIAN_FRONTEND=noninteractive add-apt-repository -yq ppa:openjdk-r/ppa
-      sudo DEBIAN_FRONTEND=noninteractive apt-get update -yq
-      sudo DEBIAN_FRONTEND=noninteractive apt-get install -yq openjdk-11-jdk
+      sudo add-apt-repository ppa:openjdk-r/ppa
+      sudo apt-get update
+      sudo apt-get install -y openjdk-11-jdk
       sudo update-java-alternatives -s java-1.11.0-openjdk-amd64
       java -version
     fi
@@ -42,6 +42,7 @@ script:
   - chmod +x gradlew
   - ./gradlew clean test integrationTest
   - ./gradlew bootJar -Pprod -x test
+  - ./gradlew bootJar -Pprod jibDockerBuild
 notifications:
   webhooks:
     on_success: change  # options: [always|never|change] default: always
