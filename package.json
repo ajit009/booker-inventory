@@ -1,0 +1,22 @@
+{
+  "name": "booker-inventory",
+  "version": "0.0.0",
+  "description": "Description for bookerInventory",
+  "private": true,
+  "license": "UNLICENSED",
+  "cacheDirectories": [
+    "node_modules"
+  ],
+  "devDependencies": {
+    "generator-jhipster-swagger-cli": "3.0.1",
+    "generator-jhipster-audit-helper": "1.0.3",
+    "generator-jhipster-testcontainers": "1.0.0",
+    "generator-jhipster-translation": "1.0.4",
+    "generator-jhipster-database-backup": "1.0.7",
+    "generator-jhipster": "6.4.1",
+    "@openapitools/openapi-generator-cli": "0.0.14-4.0.2"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "au.com.booker",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.4.1",
+    "applicationType": "microservice",
+    "baseName": "bookerInventory",
+    "packageName": "au.com.booker",
+    "packageFolder": "au/com/booker",
+    "serverPort": "8061",
+    "authenticationType": "oauth2",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": "elasticsearch",
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MDEzNDVlOGQ1ZGU4NDUzOGI0MWMwYWNkNzg0ZWQwOWVmNDBkZmRlYjJjOGY5YWNhNTE2NDRmMzBjN2NmNDg4MTQ2MjlhMzRkZmY5NDBiMWFmODkxMjliY2ZiNGYzZmQyMWEzZjcxMjEwYjk3ZDUxMTRiMzRmMWY2NzY3OTRmOGY=",
+    "embeddableLaunchScript": false,
+    "testFrameworks": [
+      "gatling",
+      "cucumber"
+    ],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-swagger-cli",
+        "version": "3.0.1"
+      },
+      {
+        "name": "generator-jhipster-audit-helper",
+        "version": "1.0.3"
+      },
+      {
+        "name": "generator-jhipster-testcontainers",
+        "version": "1.0.0"
+      },
+      {
+        "name": "generator-jhipster-translation",
+        "version": "1.0.4"
+      },
+      {
+        "name": "generator-jhipster-database-backup",
+        "version": "1.0.7"
+      }
+    ],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "al",
+      "bn",
+      "zh-cn",
+      "zh-tw",
+      "fr",
+      "de",
+      "hi",
+      "in",
+      "ja",
+      "ko",
+      "mr",
+      "pl",
+      "pt-pt",
+      "ru",
+      "ta",
+      "te",
+      "th",
+      "vi"
+    ],
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
