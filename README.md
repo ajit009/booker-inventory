@@ -1,2 +1,2 @@
-# booker-inbentory
+# booker-inventory
 spring boot containerised app for k8s-istio with jhipster
