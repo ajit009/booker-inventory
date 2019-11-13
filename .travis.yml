@@ -23,7 +23,7 @@ before_install:
       echo '*** Using OpenJDK 8'
     else
       echo '*** Using OpenJDK 11 by default'
-      sudo add-apt-repository ppa:openjdk-r/ppa
+      sudo DEBIAN_FRONTEND=noninteractive add-apt-repository -yq ppa:openjdk-r/ppa
       sudo DEBIAN_FRONTEND=noninteractive apt-get update -yq
       sudo DEBIAN_FRONTEND=noninteractive apt-get install -yq openjdk-11-jdk
       sudo update-java-alternatives -s java-1.11.0-openjdk-amd64
