@@ -42,6 +42,7 @@ script:
   - chmod +x gradlew
   - ./gradlew clean test integrationTest
   - ./gradlew bootJar -Pprod -x test
+  - ./gradlew -Pprod clean check jacocoTestReport sonarqube
   - ./gradlew bootJar -Pprod jibDockerBuild
 notifications:
   webhooks:
