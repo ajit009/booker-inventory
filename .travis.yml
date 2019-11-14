@@ -49,6 +49,7 @@ script:
   - ./gradlew bootJar -Pprod -x test
   # - ./gradlew -Pprod clean check jacocoTestReport sonarqube
   - ./gradlew bootJar -Pprod jibDockerBuild
+  - docker login -u ${USERNAME} -p ${PASSWORD} && docker push ajit009/bookerinventory
 notifications:
   webhooks:
     on_success: change  # options: [always|never|change] default: always
