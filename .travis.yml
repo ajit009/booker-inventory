@@ -38,7 +38,7 @@ before_install:
   - npm -v
 addons:
   sonarcloud:
-    organization: "bookerinventory"
+    organization: "ajit009_booker-inventory"
     token:
       secure: "VMOdAtquyejUwd/cE2xTrkfQD/zYuVJgRyeMDpvqW0Y/BXX2oJz5oMdgpVCa9myHfIyfJyxME8QYxBySaCtpqgmUscJgGuGthDtj92KqbQN+tdprxXET7WEgrl2fzNgQXKom8MuOAOxutK03wpFg26I2ueSizBvv2lVc8tdM0XRQrlJeVQXCGfzgh66w1sq2OEAFTvIBLf2Upd4d7tEguwgowO/wUUsAsjQHl6blNjktzQqUYpJXjBud6LKqpLEmHmpxUplVh+DufveTFh7JbvoSFONcaUDEOdpF+URp+ILEe9PsxrtkZeWtbm0VW4J7Y8T3eWBIYDdJvNVxWpeqJGELCvYQPEk47iJuluFlyf123/PUaDBJvnhbsF8QRLZl90mIHIu1K60MFg8Hn4c44+3ywn/z6OHMfDPdES0YtOtWuN+UZLMqcEgN6Sw2xB+Xa/1ECId90OJh/gaPpdoESd2E1NbQIGhKecOQAfY3KQSt74WuUHoRCHxJpTWkY5RSVDQTcRLDHsG6eVwN5TgmKHbAUd9amKx9nsZiimYtTephtqIp6u3V1AoPOM6FcZYQoAsW9jezcv/jfxCh8FlNnNWocMoG9EiDwgBwU53/74D9nwg1LRsZnCVAQ3ocNOt67JYzFdxOtUDup3dLvqp3ItJcJTeC/5IuHIHZ8yyWwHo=" # encrypted value of your token
 install:
@@ -47,7 +47,7 @@ script:
   - chmod +x gradlew
   - ./gradlew clean test integrationTest
   - ./gradlew bootJar -Pprod -x test
-  - ./gradlew -Pprod clean check jacocoTestReport sonarqube
+  # - ./gradlew -Pprod clean check jacocoTestReport sonarqube
   - ./gradlew bootJar -Pprod jibDockerBuild
 notifications:
   webhooks:
