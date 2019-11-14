@@ -1,7 +1,9 @@
 jacoco {
     toolVersion = "0.8.4"
 }
-
+plugins {
+  id "org.sonarqube" version "2.7.1"
+}
 jacocoTestReport {
     executionData tasks.withType(Test)
     classDirectories.from = files(sourceSets.main.output.classesDirs)
