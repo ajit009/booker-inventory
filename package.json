@@ -13,7 +13,7 @@
     "generator-jhipster-testcontainers": "1.0.0",
     "generator-jhipster-translation": "1.0.4",
     "generator-jhipster-database-backup": "1.0.7",
-    "generator-jhipster": "6.4.1",
+    "generator-jhipster": "9.4.0",
     "@openapitools/openapi-generator-cli": "0.0.14-4.0.2"
   },
   "engines": {
